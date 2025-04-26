@@ -1,0 +1,5 @@
+¿Qué características hacen que esta sea una API REST? • Se usa el protocolo HTTP como capa de transporte. • Los recursos (productos) son accesibles a través de URLs claras y significativas (/api/productos). • Se utilizan los métodos HTTP estándar (GET, POST, DELETE) para representar acciones. • El servidor responde en formato JSON. • El diseño es stateless: cada request contiene toda la información necesaria. • Se emplean códigos de estado HTTP para indicar el resultado de la operación (ej: 200 OK, 201 Created, 400 Bad Request, 404 Not Found).
+
+diferencias entre 3 capas (anterior) y api rest 3 capas: un solo endpoint (/agregar-producto) con logica embebida logica de negocio y acceso a datos mezclados no es posible ni listar ni eliminar el front llamaba a una sola ruta especifica no gabua recursos respresnarados como entidades rest
+
+api rest: multilpes endpoints restful separacion clasrs en cintroller, service y repository se puede listar y eliminar productos el front ahora usa varios end points rest usando fetch los productos son recursos accesibles via rest
